@@ -103,7 +103,7 @@ if(loading){
     </div>
     
     </div>
-    <h6 > Team <a href="https://decode-your-course.netlify.app"> DYC</a> and <a href="https://smart-timetable-scheduler.up.railway.app">STS</a> </h6>
+    <h6 > Team <a href="https://decode-your-course.netlify.app"> DYC</a> and <a href="https://smart-timetable-scheduler.up.railway.app">STTS</a> </h6>
     </>
   );
 }
