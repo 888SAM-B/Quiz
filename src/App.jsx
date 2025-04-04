@@ -69,7 +69,8 @@ if(loading){
     setIsSubmitted(true); // Show Next button after submission
   };
 
-  return (
+  return (<>
+  <h1>Quiz</h1>
     <div className="body">
     <div className="body1">
       {loading ? (
@@ -102,6 +103,8 @@ if(loading){
     </div>
     
     </div>
+    <h6 > Team <a href="https://decode-your-course.netlify.app"> DYC</a> and <a href="https://decode-your-course.netlify.app">STS</a> </h6>
+    </>
   );
 }
 
