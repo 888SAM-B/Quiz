@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Loading from './loading'
 import "./App.css";
+
 
 function App() {
   const [questions, setQuestions] = useState([]);
@@ -44,7 +46,16 @@ function App() {
       setIsSubmitted(false);
     }
   };
-
+if(loading){
+  return <>
+  <div className="body99"  > <div class="content">
+      <div className="circle"></div>
+      <div className="circle"></div>
+      <div className="circle"></div>
+      <div className="circle"></div>
+    </div></div>
+  </>
+}
   const handleSubmit = () => {
     if (selectedOption === null) return; // Prevent submitting without selection
 
@@ -62,7 +73,7 @@ function App() {
     <div className="body">
     <div className="body1">
       {loading ? (
-        <p>Loading...</p>
+        <></>
       ) : (
         <>
         <div className="questions">
@@ -89,6 +100,7 @@ function App() {
         </>
       )}
     </div>
+    
     </div>
   );
 }
