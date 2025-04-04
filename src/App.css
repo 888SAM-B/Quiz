@@ -257,3 +257,6 @@ h6 a:hover {
   color: #142c46;  
   text-decoration: none; 
 }
+*{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
