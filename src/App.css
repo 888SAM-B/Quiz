@@ -41,7 +41,6 @@ button {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  font-family: "Roboto Condensed", serif;
   transition: transform 0.2s ease-in-out;
   text-decoration: none;
 }
@@ -240,8 +239,7 @@ h6 {
           
 
   font-size: 24px;      
-  color: #ffffff;
-  font-family: "Roboto Condensed", serif;
+  color: #fff;
 }
 h6 a {
   color: #D91656;  
