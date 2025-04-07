@@ -70,7 +70,7 @@ if(loading){
   };
 
   return (<>
-  <h1>Quiz</h1>
+  <h1>Python Quiz</h1>
     <div className="body">
     <div className="body1">
       {loading ? (
