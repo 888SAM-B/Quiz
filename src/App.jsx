@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://quiztest-8vw1.onrender.com/python")
+      .get("https://quiztest-8vw1.onrender.com/java")
       .then((response) => {
         setQuestions(response.data);
         setLoading(false);
