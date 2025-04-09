@@ -11,9 +11,9 @@ function home() {
  <>
 
 <div className="firstpage">
-  <button onClick={(event)=>nav(event) } value={"java"}>JAVA</button>
-  <button onClick={(event)=>nav(event) } value={"python"}>PYTHON</button>
   <button onClick={(event)=>nav(event) } value={"c"}>C Language</button>
+  <button onClick={(event)=>nav(event) } value={"python"}>PYTHON</button>
+  <button onClick={(event)=>nav(event) } value={"java"}>JAVA</button>
 </div>
 </>
 )
