@@ -69,7 +69,7 @@ if(loading){
   };
 
   return (<>
-  <h1>{course.toUpperCase()} Quiz</h1>
+  <h1>{course.toUpperCase()} QUIZ</h1>
     <div className="body">
     <div className="body1">
       {loading ? (
