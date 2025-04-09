@@ -6,6 +6,7 @@ function mainPage(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [correctAnswers,setCorrectAnswers]=useState(0);
   const [finalAnswer, setFinalAnswer] = useState(null);
   const [answerStatus, setAnswerStatus] = useState({}); // Stores color status
   const [isSubmitted, setIsSubmitted] = useState(false); // Controls Next button visibility
@@ -60,6 +61,9 @@ if(loading){
 
     const correctAnswer = questions[currentIndex].answer;
     setFinalAnswer(selectedOption);
+    if(correctAnswer===selectedOption){
+      setCorrectAnswers(correctAnswers+1);
+    }
     setAnswerStatus((prev) => ({
       ...prev,
       [correctAnswer]: "greenyellow",
@@ -70,6 +74,7 @@ if(loading){
 
   return (<>
   <h1>{course.toUpperCase()} QUIZ</h1>
+   <div className="score">Score <button>{correctAnswers}</button></div>
     <div className="body">
     <div className="body1">
       {loading ? (
@@ -95,7 +100,7 @@ if(loading){
           <div className="buttons">
           <button onClick={handleSubmit} disabled={isSubmitted}>Submit</button>
           <button onClick={handlePrevious} disabled={currentIndex<=0}>Previous</button>
-          <button onClick={handleNext}  >Next</button>
+          <button onClick={handleNext} disabled={!isSubmitted} >Next</button>
           </div>
         </>
       )}
