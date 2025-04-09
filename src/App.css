@@ -274,4 +274,8 @@ h6{
   margin:0;
   margin-top: 50px;
 }
+.firstpage{
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 }
