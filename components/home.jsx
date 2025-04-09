@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import {Routes,Route, useNavigate} from 'react-router-dom'
 
 function home() {
